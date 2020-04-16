@@ -50,8 +50,8 @@ class GameViewController: UIViewController {
         
         // escalando as peças do ventilador
         heliceVentilador.scale = SCNVector3(x: 1, y: 1, z: 1)
-        botao1Ventilador.scale = SCNVector3(x: 1, y: 1, z: 1)
-        botao2Ventilador.scale = SCNVector3(x: 1, y: 1, z: 1)
+        botao1Ventilador.scale = SCNVector3(x: 1.2, y: 1.2, z: 1.2)
+        botao2Ventilador.scale = SCNVector3(x: 1.2, y: 1.2, z: 1.2)
         baseVentilador.scale = SCNVector3(x: 1, y: 1, z: 1)
         gradeVentilador.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1)
         
@@ -63,8 +63,8 @@ class GameViewController: UIViewController {
         heliceVentilador.position = SCNVector3(x: 0, y: 0, z: 3)
         baseVentilador.position = SCNVector3(x: 0, y: -30, z: 30)
         gradeVentilador.position = SCNVector3(x: 0, y: 0, z: 0)
-        botao1Ventilador.position = SCNVector3(x: 4, y: -27, z: -36)
-        botao2Ventilador.position = SCNVector3(x: -5, y: -27, z: -36)
+        botao1Ventilador.position = SCNVector3(x: 4, y: -27, z: -35.7)
+        botao2Ventilador.position = SCNVector3(x: -5, y: -27, z: -35.7)
         
         
         // falando que a scnView é essa view
@@ -104,8 +104,8 @@ class GameViewController: UIViewController {
         if botao1.name == "botao1Name" {
            gradeVentis.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 2)))
             heliceVentis.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 0, z: 2, duration: 0.3)))
-            botao1.position = SCNVector3(x: 4, y: -28, z: -36)
-            botao2.position = SCNVector3(x: -5, y: -27, z: -36)
+            botao1.position = SCNVector3(x: 4, y: -28.5, z: -35.7)
+            botao2.position = SCNVector3(x: -5, y: -27, z: -35.7)
             gradeVentis.isPaused = false
             heliceVentis.isPaused = false
         }
@@ -127,9 +127,8 @@ class GameViewController: UIViewController {
             } else if i.node.parent?.name == "botao2Name"{
                 gradeVentis.isPaused = true
                 heliceVentis.isPaused = true
-                botao2.position = SCNVector3(x: -5, y: -28, z: -36)
-                botao1.position = SCNVector3(x: 4, y: -27, z: -36)
-                
+                botao1.position = SCNVector3(x: 4, y: -27, z: -35.7)
+                botao2.position = SCNVector3(x: -5, y: -28.5, z: -35.7)
             }
         }
     }
