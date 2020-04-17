@@ -13,6 +13,7 @@
 		877498502446305800A54057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8774984E2446305800A54057 /* Main.storyboard */; };
 		877498522446305A00A54057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877498512446305A00A54057 /* Assets.xcassets */; };
 		877498552446305A00A54057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877498532446305A00A54057 /* LaunchScreen.storyboard */; };
+		87F47360244A1A2C00B2CC29 /* piaoCasa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87F4735F244A1A2C00B2CC29 /* piaoCasa.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		877498512446305A00A54057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		877498542446305A00A54057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		877498562446305A00A54057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F4735F244A1A2C00B2CC29 /* piaoCasa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piaoCasa.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		877498472446305800A54057 /* Ventilador */ = {
 			isa = PBXGroup;
 			children = (
+				87F4735C244A15F200B2CC29 /* Sound */,
 				877498482446305800A54057 /* AppDelegate.swift */,
 				8774984A2446305800A54057 /* art.scnassets */,
 				8774984C2446305800A54057 /* GameViewController.swift */,
@@ -65,6 +68,14 @@
 				877498562446305A00A54057 /* Info.plist */,
 			);
 			path = Ventilador;
+			sourceTree = "<group>";
+		};
+		87F4735C244A15F200B2CC29 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				87F4735F244A1A2C00B2CC29 /* piaoCasa.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				8774984B2446305800A54057 /* art.scnassets in Resources */,
 				877498552446305A00A54057 /* LaunchScreen.storyboard in Resources */,
+				87F47360244A1A2C00B2CC29 /* piaoCasa.mp3 in Resources */,
 				877498522446305A00A54057 /* Assets.xcassets in Resources */,
 				877498502446305800A54057 /* Main.storyboard in Resources */,
 			);

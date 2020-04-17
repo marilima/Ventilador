@@ -9,6 +9,7 @@
 import UIKit
 import QuartzCore
 import SceneKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     let scene = SCNScene(named: "art.scnassets/ship.scn")!
@@ -18,9 +19,11 @@ class GameViewController: UIViewController {
     var heliceVentis = SCNNode()
     var botao1 = SCNNode()
     var botao2 = SCNNode()
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playSound()
        
 //        criando, adicionando e posicionando a camera
         cameraNode.camera = SCNCamera()
@@ -108,6 +111,8 @@ class GameViewController: UIViewController {
             botao2.position = SCNVector3(x: -5, y: -27, z: -35.7)
             gradeVentis.isPaused = false
             heliceVentis.isPaused = false
+            player?.prepareToPlay()
+            player?.play()
         }
     }
     
@@ -129,10 +134,23 @@ class GameViewController: UIViewController {
                 heliceVentis.isPaused = true
                 botao1.position = SCNVector3(x: 4, y: -27, z: -35.7)
                 botao2.position = SCNVector3(x: -5, y: -28.5, z: -35.7)
+                player?.pause()
             }
         }
     }
-    
+    func playSound() {
+            if let soundURL = Bundle.main.url(forResource: "piaoCasa", withExtension: "mp3") {
+                do {
+                    try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
+                    try AVAudioSession.sharedInstance().setActive(true)
+                    player = try AVAudioPlayer(contentsOf: soundURL, fileTypeHint: AVFileType.mp3.rawValue)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            } else {
+                print("Não foi possível encontrar o arquivo ou a configuração está desabilitada")
+            }
+        }
     
     override var shouldAutorotate: Bool {
         return true
