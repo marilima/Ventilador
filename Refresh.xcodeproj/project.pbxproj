@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		877498452446305800A54057 /* Ventilador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ventilador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		877498452446305800A54057 /* Refresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		877498482446305800A54057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8774984A2446305800A54057 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		8774984C2446305800A54057 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		877498462446305800A54057 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				877498452446305800A54057 /* Ventilador.app */,
+				877498452446305800A54057 /* Refresh.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		877498442446305800A54057 /* Ventilador */ = {
+		877498442446305800A54057 /* Refresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 877498592446305A00A54057 /* Build configuration list for PBXNativeTarget "Ventilador" */;
+			buildConfigurationList = 877498592446305A00A54057 /* Build configuration list for PBXNativeTarget "Refresh" */;
 			buildPhases = (
 				877498412446305800A54057 /* Sources */,
 				877498422446305800A54057 /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = Ventilador;
+			name = Refresh;
 			productName = Ventilador;
-			productReference = 877498452446305800A54057 /* Ventilador.app */;
+			productReference = 877498452446305800A54057 /* Refresh.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 877498402446305800A54057 /* Build configuration list for PBXProject "Ventilador" */;
+			buildConfigurationList = 877498402446305800A54057 /* Build configuration list for PBXProject "Refresh" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				877498442446305800A54057 /* Ventilador */,
+				877498442446305800A54057 /* Refresh */,
 			);
 		};
 /* End PBXProject section */
@@ -299,14 +299,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X85S6HV6;
 				INFOPLIST_FILE = Ventilador/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MRL.Ventilador;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Refresh;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,21 +318,22 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7X85S6HV6;
 				INFOPLIST_FILE = Ventilador/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MRL.Ventilador;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Refresh;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		877498402446305800A54057 /* Build configuration list for PBXProject "Ventilador" */ = {
+		877498402446305800A54057 /* Build configuration list for PBXProject "Refresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				877498572446305A00A54057 /* Debug */,
@@ -340,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		877498592446305A00A54057 /* Build configuration list for PBXNativeTarget "Ventilador" */ = {
+		877498592446305A00A54057 /* Build configuration list for PBXNativeTarget "Refresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8774985A2446305A00A54057 /* Debug */,
