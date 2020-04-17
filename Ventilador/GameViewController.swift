@@ -20,6 +20,7 @@ class GameViewController: UIViewController {
     var botao1 = SCNNode()
     var botao2 = SCNNode()
     var player: AVAudioPlayer?
+    var mari = SCNNode()
     
     override func viewDidLoad() {
         super.viewDidLoad()
